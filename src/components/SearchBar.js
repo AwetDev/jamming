@@ -1,10 +1,9 @@
 import React from 'react';
 
-function SearchBar() {
+function SearchBar({value, onChange}) {
     return (
         <div>
-            <input />
-            <button>SEARCH</button>
+            <input value={value} onChange={onChange} placeholder="Enter A Song, Album, or Artist"/>
         </div>
     );
 }
